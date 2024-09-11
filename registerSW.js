@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/publishweb/sw.js', { scope: '/publishweb/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/publishWeb/sw.js', { scope: '/publishWeb/' })})}
