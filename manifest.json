@@ -1,0 +1,32 @@
+{
+    "theme_color": "#4E41DB",
+    "background_color": "#4E41DB",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Click",
+    "short_name": "Ck",
+    "icons": [
+      {
+        "src": "/favicon_32x32.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/favicon_16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      },
+      {
+        "src": "/favicon_152x152.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      },
+      {
+        "src": "/favicon_180x180.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      }
+    ]
+  }
