@@ -16,7 +16,6 @@ export default defineConfig({
         start_url: "https://kjm9547.github.io/publishWeb/",
         name: "Click",
         short_name: "Ck",
-        
         icons: [
           {
             src: "https://kjm9547.github.io/publishWeb/favicon_32x32.png",
@@ -33,14 +32,24 @@ export default defineConfig({
             //스플래시 뷰의 아이콘 역활
             src: "https://kjm9547.github.io/publishWeb/favicon_192x192.png",
             sizes: "192x192",
-            type: "image/png"
+            type: "image/png",
+          },
+          {
+            //스플래시 뷰의 아이콘 역활
+            src: "https://kjm9547.github.io/publishWeb/favicon_180x180.png",
+            sizes: "180x180",
+            type: "image/png",
           },
           {
             src: "https://kjm9547.github.io/publishWeb/favicon_152x152.png",
             sizes: "152x152",
             type: "image/png",
-            purpose:"any"
           },
+          {
+            src: "https://kjm9547.github.io/publishWeb/iphonSplash.png",
+            type: "image/png",
+          },
+         
         ]
       }
     })
