@@ -19,11 +19,6 @@
         "type": "image/png"
       },
       {
-        "src": "/favicon_152x152.png",
-        "sizes": "152x152",
-        "type": "image/png"
-      },
-      {
         "src": "/favicon_180x180.png",
         "sizes": "180x180",
         "type": "image/png"
