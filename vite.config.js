@@ -45,10 +45,6 @@ export default defineConfig({
             sizes: "152x152",
             type: "image/png",
           },
-          {
-            src: "https://kjm9547.github.io/publishWeb/iphonSplash.png",
-            type: "image/png",
-          },
          
         ]
       }
