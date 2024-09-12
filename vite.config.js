@@ -15,13 +15,13 @@ export default defineConfig({
         scope: "https://kjm9547.github.io/publishWeb/",
         start_url: "https://kjm9547.github.io/publishWeb/",
         name: "Click",
-        short_name: "Ck",
+        short_name: "Click",
         icons: [
           {
             src: "https://kjm9547.github.io/publishWeb/favicon_32x32.png",
             sizes: "32x32",
             type: "image/png",
-            purpose: "any maskable"
+            purpose: "maskable"
           },
           {
             src: "https://kjm9547.github.io/publishWeb/favicon_16x16.png",
@@ -45,7 +45,12 @@ export default defineConfig({
             sizes: "152x152",
             type: "image/png",
           },
-         
+          {
+            src: "https://kjm9547.github.io/publishWeb/favicon_512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "any"
+          },
         ]
       }
     })
