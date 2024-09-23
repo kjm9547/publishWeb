@@ -18,10 +18,3 @@ self.addEventListener("fetch", function (event) {
     );
   }
 });
-self.addEventListener("push", function (event) {
-  event.waitUntil(
-    fetch("/updates").then(function () {
-      return self.registration.showNotification("New Update");
-    })
-  );
-}); 
