@@ -1,18 +1,16 @@
-export const registerServiceWorker = async () => {
-    if ("serviceWorker" in navigator) {
-      try {
-        const registration = await navigator.serviceWorker.register("/sw.js", {
-          scope: "/",
-        });
-        if (registration.installing) {
-          console.log("Service worker installing");
-        } else if (registration.waiting) {
-          console.log("Service worker installed");
-        } else if (registration.active) {
-          console.log("Service worker active");
-        }
-      } catch (error) {
-        console.error(`Registration failed with ${error}`);
-      }
-    }
-  };
+self.addEventListener('install', (event) => {
+  console.log('Service worker installed');
+});
+
+self.addEventListener('activate', (event) => {
+  console.log('Service worker activated');
+});
+
+self.addEventListener('fetch', (event) => {
+  // 요청을 가로채고 캐시에서 응답을 반환하는 로직
+  event.respondWith(
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request);
+    })
+  );
+});

@@ -1,19 +1,19 @@
 {
     "theme_color": "#4E41DB",
-        "background_color": "#4E41DB",
-        "display": "standalone",
-        "scope": "https://kjm9547.github.io/publishWeb/",
-        "start_url": "https://kjm9547.github.io/publishWeb/",
-        "name": "Click",
-        "short_name": "Click",
-        "icons": [
-          {
-            "src": "https://kjm9547.github.io/publishWeb/favicon_32x32.png",
-            "sizes": "32x32",
-            "type": "image/png",
-            "purpose": "maskable"
-          },
-          {
+    "background_color": "#4E41DB",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Click",
+    "short_name": "Click",
+    "icons": [
+        {
+        "src": "https://kjm9547.github.io/publishWeb/favicon_32x32.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "maskable"
+        },
+        {
             "src": "https://kjm9547.github.io/publishWeb/favicon_16x16.png",
             "sizes": "16x16",
             "type": "image/png"
@@ -40,6 +40,6 @@
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any"
-          }
-        ]
+          }   
+    ]
 }
