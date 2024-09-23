@@ -1,1 +1,18 @@
-if(!self.define){let e,i={};const s=(s,n)=>(s=new URL(s+".js",n).href,i[s]||new Promise((i=>{if("document"in self){const e=document.createElement("script");e.src=s,e.onload=i,document.head.appendChild(e)}else e=s,importScripts(s),i()})).then((()=>{let e=i[s];if(!e)throw new Error(`Module ${s} didn’t register its module`);return e})));self.define=(n,r)=>{const t=e||("document"in self?document.currentScript.src:"")||location.href;if(i[t])return;let o={};const l=e=>s(e,t),c={module:{uri:t},exports:o,require:l};i[t]=Promise.all(n.map((e=>c[e]||l(e)))).then((e=>(r(...e),o)))}}define(["./workbox-3e911b1d"],(function(e){"use strict";self.skipWaiting(),e.clientsClaim(),e.precacheAndRoute([{url:"assets/index-B94JJNeX.js",revision:null},{url:"assets/index-DiwrgTda.css",revision:null},{url:"index.html",revision:"eacf0f42c29f4804cdb9f783ace7bb88"},{url:"registerSW.js",revision:"6886fad3216873b9033e90f9dbd44eb6"},{url:"manifest.webmanifest",revision:"a45d4b3a5926c7f9ece4b3ffdc2031c4"}],{}),e.cleanupOutdatedCaches(),e.registerRoute(new e.NavigationRoute(e.createHandlerBoundToURL("index.html")))}));
+export const registerServiceWorker = async () => {
+    if ("serviceWorker" in navigator) {
+      try {
+        const registration = await navigator.serviceWorker.register("/sw.js", {
+          scope: "/",
+        });
+        if (registration.installing) {
+          console.log("Service worker installing");
+        } else if (registration.waiting) {
+          console.log("Service worker installed");
+        } else if (registration.active) {
+          console.log("Service worker active");
+        }
+      } catch (error) {
+        console.error(`Registration failed with ${error}`);
+      }
+    }
+  };
