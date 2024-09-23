@@ -1,8 +1,8 @@
 [{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "io.github.kjm9547.twa",
-    "sha256_cert_fingerprints": ["BB:13:96:A6:E7:B3:BC:08:97:59:CF:53:2C:F7:D1:03:E3:E1:83:29:62:E2:C2:1E:54:B7:30:D7:BC:95:3A:F6"]
-  }
-}]
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.kjm9547.twa",
+        "sha256_cert_fingerprints": ["C7:14:81:53:02:EE:81:12:58:C9:D7:D9:CF:30:03:A3:00:EA:9C:F2:35:10:71:82:A7:E1:25:04:4D:2F:57:30"]
+      }
+    }]
