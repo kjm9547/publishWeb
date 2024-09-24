@@ -54,10 +54,16 @@
             "type": "image/png"
           },
           {
-            "src": "https://kjm9547.github.io/publishWeb/favicon_512x512.png",
+            "src": "https://kjm9547.github.io/publishWeb/android_512x512.png",
             "sizes": "512x512",
             "type": "image/png",
-            "purpose": "any"
-          }   
+            "purpose": "maskable"
+          },
+          {
+            "src": "https://kjm9547.github.io/publishWeb/favicon_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+          }
+          
     ]
 }
