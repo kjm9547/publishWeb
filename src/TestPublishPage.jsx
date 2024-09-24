@@ -4,7 +4,7 @@ export const TestPublishPage = () => {
     const [count,setCount] = useState(0)
     const [ftSize, setFtSize] = useState(40)
     useEffect(()=>{
-        if(count % 10 == 0) setFtSize(ftSize+10)
+        if(count % 5 == 0) setFtSize(ftSize+10)
     },[count])
     return(
         <div>
