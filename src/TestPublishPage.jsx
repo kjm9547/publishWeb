@@ -4,7 +4,7 @@ export const TestPublishPage = () => {
     const [count,setCount] = useState(0)
     return(
         <div>
-            <header><h1 style={{color:"#4E41DB"}}>Click..!</h1></header>
+            <header><h1 style={{color:"#4E41DB"}}>Click.....!</h1></header>
             <div style={{
                 display:"flex",
                 flexDirection:"column",
