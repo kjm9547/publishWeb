@@ -1,10 +1,15 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export const TestPublishPage = () => {
     const [count,setCount] = useState(0)
+    const [ftSize, setFtSize] = useState(40)
+    useEffect(()=>{
+        if(count % 10 == 0) setFtSize(ftSize+10)
+    },[count])
     return(
         <div>
-            <header><h1 style={{color:"#4E41DB"}}>Click.....!</h1></header>
+            <header onClick={()=>{setCount(0)}}
+            ><h1 style={{color:"#4E41DB"}}>Click.....!</h1></header>
             <div style={{
                 display:"flex",
                 flexDirection:"column",
@@ -20,7 +25,7 @@ export const TestPublishPage = () => {
                         color:"white",
                         fontWeight:"bold"}}
                 >+</button>
-                <p style={{fontWeight:"bold",fontSize:40}}>{count}</p>
+                <p style={{fontWeight:"bold",fontSize:ftSize}}>{count}</p>
                 <button 
                     onClick={()=>{setCount(count-1)}}
                     style={{
