@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
+document.documentElement.lang= window.navigator.language.split('-')[0]
 const registerServiceWorker = async () => {
   if ('serviceWorker' in navigator) {
     try {
