@@ -2,8 +2,8 @@
     "theme_color": "#4E41DB",
     "background_color": "#4E41DB",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
+    "scope": "/publishWeb/",
+    "start_url": "/publishWeb/",
     "name": "Click",
     "short_name": "Click",
     "icons": [
