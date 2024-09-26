@@ -1,69 +1,63 @@
 {
     "theme_color": "#4E41DB",
-    "background_color": "#4E41DB",
-    "display": "fullscreen",
-    "scope": "/publishWeb/",
-    "start_url": "/publishWeb/",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
     "name": "Click",
     "short_name": "Click",
     "icons": [
         {
-        "src": "https://kjm9547.github.io/publishWeb/favicon_32x32.png",
+        "src": "/icon_32x32.png",
         "sizes": "32x32",
         "type": "image/png",
         "purpose": "maskable"
         },
         {
-            "src": "https://kjm9547.github.io/publishWeb/favicon_48x48.png",
+            "src": "/icon_48x48.png",
             "sizes": "48x48",
             "type": "image/png",
             "purpose": "maskable"
           }  ,
           {
-            "src": "https://kjm9547.github.io/publishWeb/favicon_96x96.png",
+            "src": "/clickicon_96x96.png",
             "sizes": "96x96",
             "type": "image/png",
-            "purpose": "maskable"
+            "purpose":"monochrome"
           }  ,
           {
-            "src": "https://kjm9547.github.io/publishWeb/favicon_144x144.png",
+            "src": "/icon_144x144.png",
             "sizes": "144x144",
             "type": "image/png",
             "purpose": "maskable"
           }  ,
           {
-            "src": "https://kjm9547.github.io/publishWeb/favicon_16x16.png",
+            "src": "/icon_16x16.png",
             "sizes": "16x16",
             "type": "image/png"
           },
           {
             
-            "src": "https://kjm9547.github.io/publishWeb/favicon_192x192.png",
+            "src": "/icon_192x192.png",
             "sizes": "192x192",
             "type": "image/png"
           },
           {
             
-            "src": "https://kjm9547.github.io/publishWeb/favicon_180x180.png",
+            "src": "/icon_180x180.png",
             "sizes": "180x180",
             "type": "image/png"
           },
           {
-            "src": "https://kjm9547.github.io/publishWeb/favicon_152x152.png",
+            "src": "/icon_152x152.png",
             "sizes": "152x152",
             "type": "image/png"
           },
           {
-            "src": "https://kjm9547.github.io/publishWeb/android_512x512.png",
+            "src": "/icon_512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
-          },
-          {
-            "src": "https://kjm9547.github.io/publishWeb/favicon_512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
           }
-          
     ]
 }

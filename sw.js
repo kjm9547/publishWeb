@@ -1,9 +1,10 @@
 self.addEventListener("install", function () {
   console.log("install");
+  self.skipWaiting();
 });
 
 self.addEventListener("activate", function () {
-  console.log("activate");
+
 });
 
 self.addEventListener("fetch", function (event) {
@@ -18,3 +19,28 @@ self.addEventListener("fetch", function (event) {
     );
   }
 });
+
+self.addEventListener('message', (event) => {
+  const {message} = event.data.payload;
+
+  const options = {
+    body: message,
+    icon: "/icon_512x512.png",
+    vibrate: [200, 100, 200, 100,],
+    badge:'/clickicon_96x96.png'
+  }
+
+  self.registration.showNotification('타이틀입니다.',options);
+
+})
+
+// self.addEventListener('push', function(event) {
+  
+//  console.log(event)
+ 
+ 
+
+// event.waitUntil(
+//   self.registration.showNotification("test클릭", options)
+// );
+// });
