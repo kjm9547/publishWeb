@@ -25,7 +25,7 @@ self.addEventListener('message', (event) => {
 
   const options = {
     body: message,
-    icon: "/icon_512x512.png",
+    icon: "",
     vibrate: [200, 100, 200, 100,],
     badge:'/clickicon_96x96.png'
   }
