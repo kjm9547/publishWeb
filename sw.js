@@ -25,22 +25,22 @@ self.addEventListener('message', (event) => {
 
   const options = {
     body: message,
-    icon: "",
+    icon: "/new512x512.png",
     vibrate: [200, 100, 200, 100,],
-    badge:'/clickicon_96x96.png'
+    badge:'/clickicon_192x192.png'
   }
 
   self.registration.showNotification('타이틀입니다.',options);
 
 })
 
-// self.addEventListener('push', function(event) {
-  
-//  console.log(event)
- 
- 
+self.addEventListener('push',(event) => {
+  console.log(event)
+  const options = {
+    body: "data.body",
+  };
 
-// event.waitUntil(
-//   self.registration.showNotification("test클릭", options)
-// );
-// });
+  event.waitUntil(
+    self.registration.showNotification("title", options)
+  );
+})

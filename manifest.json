@@ -1,57 +1,26 @@
 {
-    "theme_color": "#4E41DB",
-    "background_color": "#FFFFFF",
-    "display": "standalone",
+    "display":"standalone",
     "scope": "/",
     "start_url": "/",
     "name": "Click",
-    "short_name": "Click",
+    "short_name": "cli",
     "icons": [
-        {
-        "src": "/icon_32x32.png",
-        "sizes": "32x32",
+      {
+        "src": "/icon_192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icon_512x512.png",
+        "sizes": "512x512",
         "type": "image/png",
         "purpose": "maskable"
-        },
-     
-          {
-            "src": "/clickicon_96x96.png",
-            "sizes": "96x96",
-            "type": "image/png",
-            "purpose":"monochrome"
-          }  ,
-          {
-            "src": "/icon_144x144.png",
-            "sizes": "144x144",
-            "type": "image/png",
-            "purpose": "maskable"
-          }  ,
-          {
-            "src": "/icon_16x16.png",
-            "sizes": "16x16",
-            "type": "image/png"
-          },
-          {
-            
-            "src": "/icon_192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-          },
-          {
-            
-            "src": "/icon_180x180.png",
-            "sizes": "180x180",
-            "type": "image/png"
-          },
-          {
-            "src": "/icon_152x152.png",
-            "sizes": "152x152",
-            "type": "image/png"
-          },
-          {
-            "src": "/icon_512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-          }
+      },
+      {
+        "src": "/new512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      }  
     ]
 }
